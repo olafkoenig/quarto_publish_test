@@ -44,3 +44,10 @@ mapview(breweries, zcol = c("brewery", "village", "founded"))
 mapview(breweries, zcol = "village")
 
 ```
+
+## J'ajoute un second commentaire
+
+```{r}
+
+print(breweries)
+```
