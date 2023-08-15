@@ -1,0 +1,32 @@
+---
+title: "Test_quarto_publish"
+format:
+  html:
+    theme: default
+    toc: true
+    number-sections: true
+---
+
+Libraries
+
+```{r}
+
+library(mapview)
+library(leaflet)
+library(leafsync)
+```
+
+```{r}
+
+mapview(breweries)
+```
+
+```{r}
+
+m1 <- mapview(breweries, zcol = "village", map.types = "Esri.WorldImagery")
+m2 <- mapview(breweries, zcol = "brewery", col.regions = heat.colors)
+m3 <- mapview(breweries, zcol = "founded", legend = TRUE)
+m4 <- leaflet() %>% addTiles() %>% addCircleMarkers(data = breweries)
+
+sync(m1, m2, m3, m4)
+```
