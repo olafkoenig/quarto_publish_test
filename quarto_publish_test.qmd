@@ -30,3 +30,17 @@ m4 <- leaflet() %>% addTiles() %>% addCircleMarkers(data = breweries)
 
 sync(m1, m2, m3, m4)
 ```
+
+```{r}
+
+mapview(breweries, zcol = c("brewery", "village", "founded"))
+
+```
+
+### J'ajoute quelques trucs pour faire un push
+
+```{r}
+
+mapview(breweries, zcol = "village")
+
+```
