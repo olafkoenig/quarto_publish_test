@@ -51,3 +51,5 @@ mapview(breweries, zcol = "village")
 
 print(breweries)
 ```
+
+## Pourquoi n'est-il pas possible de pusher?
