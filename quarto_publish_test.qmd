@@ -2,6 +2,7 @@
 title: "Test_quarto_publish"
 format:
   html:
+    embed-resources: true
     theme: default
     toc: true
     number-sections: true
