@@ -54,3 +54,11 @@ print(breweries)
 ```
 
 ## Pourquoi n'est-il pas possible de pusher?
+
+### J'utilise un nouveau push
+
+```{r}
+
+mapview::mapview(breweries, zcol = "brewery")
+
+```
